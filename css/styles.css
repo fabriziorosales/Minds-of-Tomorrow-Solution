@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Header (Encabezado)*/
+
+.header {
+    background-image: url('../img/banner-2.jpg');
+    background-attachment: fixed;
+    padding: 10% 15%;
+    text-align: center;
+    background-size: cover;
+    font-size: 90px;
+}
+
+
+/*Creacion de columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 2% 16% 3% 16%;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 1.8% 1% 1.4% 35px;
+}
+
+.four-column {
+    padding: 0 12px 0 12px;
+    float: left;
+    width: 25%;
+}
+
+
+/*Adaptacion de imagenes*/
+
+.two-column img {
+    width: 100%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+
+/*Adaptacion de letras*/
+
+.one-column h1 {
+    text-align: center;
+    font-size: 75px;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.four-column h1 {
+    text-align: center;
+    font-size: 1.27vw;
+}
+
+.four-column p {
+    font-size: 1.27vw;
+    padding: 15px 0 0 15px;
+}
+
+.sin_pad {
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+
+/*IDs para fondos de secciones*/
+
+#section_2 {
+    background-color: #28ECA5;
+}
+
+#section_5 {
+    background-color: #46A6FC;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    font-size: 25px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:700px) {
+    .header {
+        font-size: 6vw;
+    }
+    .two-column {
+        width: 100%;
+        padding: 1% 5% 1% 5%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .one-column h1 {
+        font-size: 6vw;
+    }
+}
