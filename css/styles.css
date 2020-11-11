@@ -16,6 +16,10 @@ body {
     clear: both;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*Header (Encabezado)*/
 
@@ -25,7 +29,45 @@ body {
     padding: 10% 15%;
     text-align: center;
     background-size: cover;
-    font-size: 90px;
+    font-size: 45px;
+}
+
+
+/* Style the top navigation bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+}
+
+
+/* Style the topnav links */
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+li a:hover:not(.active) {
+    background-color: #111;
+    color: white;
 }
 
 
